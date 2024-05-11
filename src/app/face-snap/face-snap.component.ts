@@ -18,7 +18,7 @@ export class FaceSnapComponent implements OnInit {
     this.description = 'best' ;
     this.creationDate = new Date ;
     this.like = 0 ;
-    
+
   }
 
 
