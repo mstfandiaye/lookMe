@@ -1,7 +1,7 @@
 <div class="face-snap-card">
-    <h2>{{title}}</h2>
-    <p>{{description}}</p>
-    <p>publish on {{creationDate}}</p>
-    <img [src]="imageurl" [alt]="title">
-    <p><button (click)="onAddClick()"> {{this.textButton}}</button> {{like}}</p>
+    <h2>{{faceSnap.title}}</h2>
+    <p>{{faceSnap.description}}</p>
+    <p>publish on {{faceSnap.creationDate}}</p>
+    <img [src]="faceSnap.imageurl" [alt]="faceSnap.title">
+    <p><button (click)="onAddClick()"> {{faceSnap.textButton}}</button> {{faceSnap.like}}</p>
 </div>
