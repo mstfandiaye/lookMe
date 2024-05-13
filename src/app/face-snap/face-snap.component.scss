@@ -1,0 +1,48 @@
+/* Styles for the card component */
+.card {
+    box-sizing: border-box;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px 30px;
+    box-shadow: lightgray 4px 4px 20px;
+}
+
+/* Styles for the image inside the card */
+.card img {
+    width: 100%;
+    
+}
+
+/* Styles for the heading inside the card */
+.card h2 {
+    margin-bottom: 0;
+}
+
+/* Styles for the paragraph inside the card */
+.card p {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* Styles for the button inside the card */
+.card button {
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: lightgray 3px 3px 7px;
+    margin-right: 20px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+
+    /* Styles for the active state of the button */
+    &:active {
+        transform: translate(1px, 1px);
+        box-shadow: lightgray 0 0 5px;
+    }
+}
+
+.snaped{
+    background-color: lightgreen;
+}

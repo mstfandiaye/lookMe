@@ -1,8 +1,8 @@
-<div class="face-snap-card">
-    <h2>{{faceSnap.title}}</h2>
+<div class="card" [ngClass]="{snaped : faceSnap.textButton === '👎'}">
+    <h2>{{faceSnap.title | uppercase}}</h2>
     <p>{{faceSnap.description}}</p>
     <p>publish on {{faceSnap.creationDate}}</p>
-    <p *ngIf="faceSnap.location">shooted on {{faceSnap.location}}</p>
+    <p *ngIf="faceSnap.location">shooted on {{faceSnap.location | titlecase}}</p>
     <img [src]="faceSnap.imageurl" [alt]="faceSnap.title">
     <p><button (click)="onAddClick()"> {{faceSnap.textButton}}</button> {{faceSnap.like}}</p>
 </div>
