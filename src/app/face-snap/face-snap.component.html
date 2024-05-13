@@ -5,6 +5,7 @@
     <p *ngIf="faceSnap.location">shooted on {{faceSnap.location | titlecase}}</p>
     <img [src]="faceSnap.imageurl" [alt]="faceSnap.title">
     <p><button (click)="onAddClick()"> {{faceSnap.textButton}}</button> {{faceSnap.like}}</p>
+    
     <!-- <input type="text" placeholder="What's you thing about?"><button type="button">Comment</button> -->
     <input type="text" #inputRef placeholder="What's you thing about?">
     <button (click)="onButtonClick(inputRef.value)">Comment</button>
