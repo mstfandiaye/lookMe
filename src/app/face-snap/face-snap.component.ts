@@ -8,6 +8,7 @@ import { FaceSnap } from '../models/face-snap.models';
 })
 export class FaceSnapComponent implements OnInit {
   @Input() faceSnap! : FaceSnap ;
+  
 
   
 
@@ -27,6 +28,4 @@ export class FaceSnapComponent implements OnInit {
     }
     
   }
-
-
 }

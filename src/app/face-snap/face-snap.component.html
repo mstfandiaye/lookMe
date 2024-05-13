@@ -2,6 +2,7 @@
     <h2>{{faceSnap.title}}</h2>
     <p>{{faceSnap.description}}</p>
     <p>publish on {{faceSnap.creationDate}}</p>
+    <p *ngIf="faceSnap.location">shooted on {{faceSnap.location}}</p>
     <img [src]="faceSnap.imageurl" [alt]="faceSnap.title">
     <p><button (click)="onAddClick()"> {{faceSnap.textButton}}</button> {{faceSnap.like}}</p>
 </div>
