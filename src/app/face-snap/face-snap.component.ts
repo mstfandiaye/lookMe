@@ -28,4 +28,8 @@ export class FaceSnapComponent implements OnInit {
     }
     
   }
+
+  onButtonClick(comment : string){
+    console.log(comment)
+  }
 }

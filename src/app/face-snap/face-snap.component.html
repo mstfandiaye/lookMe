@@ -1,8 +1,13 @@
 <div class="card" [ngClass]="{snaped : faceSnap.textButton === '👎'}">
     <h2>{{faceSnap.title | uppercase}}</h2>
     <p>{{faceSnap.description}}</p>
-    <p>publish on {{faceSnap.creationDate}}</p>
+    <p>publish on {{faceSnap.creationDate | date}}</p>
     <p *ngIf="faceSnap.location">shooted on {{faceSnap.location | titlecase}}</p>
     <img [src]="faceSnap.imageurl" [alt]="faceSnap.title">
     <p><button (click)="onAddClick()"> {{faceSnap.textButton}}</button> {{faceSnap.like}}</p>
+    <!-- <input type="text" placeholder="What's you thing about?"><button type="button">Comment</button> -->
+    <input type="text" #inputRef placeholder="What's you thing about?">
+    <button (click)="onButtonClick(inputRef.value)">Comment</button>
+    <p>{{(inputRef.value)}}</p>
+
 </div>
