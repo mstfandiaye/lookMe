@@ -1,11 +1,3 @@
-<app-face-snap [faceSnap]="faceSnap0"></app-face-snap> 
-<app-face-snap [faceSnap]="faceSnap1"></app-face-snap> 
-<app-face-snap [faceSnap]="faceSnap2"></app-face-snap> 
-<app-face-snap [faceSnap]="faceSnap3"></app-face-snap> 
-<app-face-snap [faceSnap]="faceSnap4"></app-face-snap> 
-<app-face-snap [faceSnap]="faceSnap5"></app-face-snap> 
-<app-face-snap [faceSnap]="faceSnap6"></app-face-snap> 
-<app-face-snap [faceSnap]="faceSnap7"></app-face-snap> 
-<app-face-snap [faceSnap]="faceSnap8"></app-face-snap> 
-<app-face-snap [faceSnap]="faceSnap9"></app-face-snap> 
+<app-face-snap *ngFor="let element of faceSnaps" [faceSnap]="element"></app-face-snap> 
+
  
